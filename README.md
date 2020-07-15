@@ -10,6 +10,6 @@ URL Shortener Web Service
 
 `java -jar target/linktuit-0.0.1-SNAPSHOT.jar linktuit.linktuit.LinktuitApplication`
 
-<b>Testing<b>
+<b>Testing</b>
   
  `mvn test`

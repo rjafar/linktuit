@@ -1,0 +1,22 @@
+digraph "linktuit.linktuit.service.UrlServiceImpl.shortenURL"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="linktuit.linktuit.service.\lUrlServiceImpl.shortenURL",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="linktuit.linktuit.service.\lConverter.base10ToBase62",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1service_1_1_converter.html#aeb8a34d90aaca647a36ae0686d8dabb1",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="linktuit.linktuit.dto.Url\lDTO.getNumReqsLeft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1dto_1_1_url_d_t_o.html#acddf00d0d03169982ca435ae60784671",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="linktuit.linktuit.dto.Url\lDTO.getOriginalUrl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1dto_1_1_url_d_t_o.html#a8407f868920d72f19b13f0de70f50780",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="linktuit.linktuit.dao.Url\lDAO.save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o.html#aac622d2d0aa220cb5db251a748ce179f",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="linktuit.linktuit.modal.\lUrlMapping.setCreatedDate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping.html#a4d96efcf4999022a16ab3e6f3f52bbce",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="linktuit.linktuit.modal.\lUrlMapping.setNumRequestsLeft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping.html#afc47d184511bd041bdea141e606894c2",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="linktuit.linktuit.modal.\lUrlMapping.setOriginalURL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping.html#ad3c2c198d7b16e4c8662c3ac45821f22",tooltip=" "];
+}

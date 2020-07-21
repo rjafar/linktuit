@@ -1,0 +1,146 @@
+\hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping}{}\doxysection{linktuit.\+linktuit.\+modal.\+Url\+Mapping Class Reference}
+\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping}\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_aed747b9844557d4111f1ea48f7af8c3a}{get\+Id}} ()
+\item 
+void \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a693ccee5040c153c31a0644403fb4148}{set\+Id}} (long id)
+\item 
+String \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_acb835cd8470c3a4ab4ec613ce99303da}{get\+Original\+U\+RL}} ()
+\item 
+void \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_ad3c2c198d7b16e4c8662c3ac45821f22}{set\+Original\+U\+RL}} (String original\+U\+RL)
+\item 
+int \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a06cde15edf5c8c13926983a48592b0de}{get\+Num\+Requests\+Left}} ()
+\item 
+void \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_afc47d184511bd041bdea141e606894c2}{set\+Num\+Requests\+Left}} (int num\+Requests\+Left)
+\item 
+Date \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a7869de805a9e11dd6f812d79b1f1d78d}{get\+Created\+Date}} ()
+\item 
+void \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a4d96efcf4999022a16ab3e6f3f52bbce}{set\+Created\+Date}} (Date created\+Date)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping}{Url\+Mapping}} class represents the entries that will be saved in the database. Each entry will have a unique ID that is supplied by the database, the original long U\+RL, and the number of requests left until the entry expires. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a7869de805a9e11dd6f812d79b1f1d78d}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a7869de805a9e11dd6f812d79b1f1d78d}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!getCreatedDate@{getCreatedDate}}
+\index{getCreatedDate@{getCreatedDate}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{getCreatedDate()}{getCreatedDate()}}
+{\footnotesize\ttfamily Date linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+get\+Created\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the date the request was created \begin{DoxyReturn}{Returns}
+Date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_aed747b9844557d4111f1ea48f7af8c3a}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_aed747b9844557d4111f1ea48f7af8c3a}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!getId@{getId}}
+\index{getId@{getId}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily long linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The get\+Id method retrieves the unique ID from the database that maps the original U\+RL to its shortened version. 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a06cde15edf5c8c13926983a48592b0de}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a06cde15edf5c8c13926983a48592b0de}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!getNumRequestsLeft@{getNumRequestsLeft}}
+\index{getNumRequestsLeft@{getNumRequestsLeft}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{getNumRequestsLeft()}{getNumRequestsLeft()}}
+{\footnotesize\ttfamily int linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+get\+Num\+Requests\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the number of requests left to this link. The link is considered expired when num\+Requests == 0 and the mapping entry should be deleted from the database. 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int number of requests left before link expires. Must be $>$ 0. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_acb835cd8470c3a4ab4ec613ce99303da}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_acb835cd8470c3a4ab4ec613ce99303da}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!getOriginalURL@{getOriginalURL}}
+\index{getOriginalURL@{getOriginalURL}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{getOriginalURL()}{getOriginalURL()}}
+{\footnotesize\ttfamily String linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+get\+Original\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the original long U\+RL. 
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String original long U\+RL 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a4d96efcf4999022a16ab3e6f3f52bbce}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a4d96efcf4999022a16ab3e6f3f52bbce}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!setCreatedDate@{setCreatedDate}}
+\index{setCreatedDate@{setCreatedDate}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{setCreatedDate()}{setCreatedDate()}}
+{\footnotesize\ttfamily void linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+set\+Created\+Date (\begin{DoxyParamCaption}\item[{Date}]{created\+Date }\end{DoxyParamCaption})}
+
+Sets the date the request was created 
+\begin{DoxyParams}{Parameters}
+{\em created\+Date} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a693ccee5040c153c31a0644403fb4148}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_a693ccee5040c153c31a0644403fb4148}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!setId@{setId}}
+\index{setId@{setId}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+set\+Id (\begin{DoxyParamCaption}\item[{long}]{id }\end{DoxyParamCaption})}
+
+The set\+Id method saves the unique ID from the database to its U\+RL mapping. 
+\begin{DoxyParams}{Parameters}
+{\em long} & ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_afc47d184511bd041bdea141e606894c2}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_afc47d184511bd041bdea141e606894c2}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!setNumRequestsLeft@{setNumRequestsLeft}}
+\index{setNumRequestsLeft@{setNumRequestsLeft}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{setNumRequestsLeft()}{setNumRequestsLeft()}}
+{\footnotesize\ttfamily void linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+set\+Num\+Requests\+Left (\begin{DoxyParamCaption}\item[{int}]{num\+Requests\+Left }\end{DoxyParamCaption})}
+
+Set the number of requests left before the short link expires. 
+\begin{DoxyParams}{Parameters}
+{\em int} & number of requests left \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_ad3c2c198d7b16e4c8662c3ac45821f22}\label{classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping_ad3c2c198d7b16e4c8662c3ac45821f22}} 
+\index{linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}!setOriginalURL@{setOriginalURL}}
+\index{setOriginalURL@{setOriginalURL}!linktuit.linktuit.modal.UrlMapping@{linktuit.linktuit.modal.UrlMapping}}
+\doxysubsubsection{\texorpdfstring{setOriginalURL()}{setOriginalURL()}}
+{\footnotesize\ttfamily void linktuit.\+linktuit.\+modal.\+Url\+Mapping.\+set\+Original\+U\+RL (\begin{DoxyParamCaption}\item[{String}]{original\+U\+RL }\end{DoxyParamCaption})}
+
+Sets the original long U\+RL. 
+\begin{DoxyParams}{Parameters}
+{\em String} & original long U\+RL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/linktuit/linktuit/modal/\mbox{\hyperlink{_url_mapping_8java}{Url\+Mapping.\+java}}\end{DoxyCompactItemize}

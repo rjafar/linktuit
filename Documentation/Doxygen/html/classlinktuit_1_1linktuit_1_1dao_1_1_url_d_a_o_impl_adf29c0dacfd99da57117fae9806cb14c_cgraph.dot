@@ -1,0 +1,14 @@
+digraph "linktuit.linktuit.dao.UrlDAOImpl.save"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="linktuit.linktuit.dao.Url\lDAOImpl.save",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="linktuit.linktuit.dao.Url\lDAOImpl.getNextId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl.html#ad02a762e83e50d9091acfecc4cbee26a",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="linktuit.linktuit.modal.\lUrlMapping.getNumRequestsLeft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping.html#a06cde15edf5c8c13926983a48592b0de",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="linktuit.linktuit.modal.\lUrlMapping.getOriginalURL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlinktuit_1_1linktuit_1_1modal_1_1_url_mapping.html#acb835cd8470c3a4ab4ec613ce99303da",tooltip=" "];
+}

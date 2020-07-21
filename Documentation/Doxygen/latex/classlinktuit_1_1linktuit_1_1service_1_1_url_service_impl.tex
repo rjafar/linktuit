@@ -1,0 +1,67 @@
+\hypertarget{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl}{}\doxysection{linktuit.\+linktuit.\+service.\+Url\+Service\+Impl Class Reference}
+\label{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl}\index{linktuit.linktuit.service.UrlServiceImpl@{linktuit.linktuit.service.UrlServiceImpl}}
+
+
+Inheritance diagram for linktuit.\+linktuit.\+service.\+Url\+Service\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for linktuit.\+linktuit.\+service.\+Url\+Service\+Impl\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_a0c11c1fe30473877a95857fc96bbc621}{Url\+Service\+Impl}} (\mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o}{Url\+D\+AO}} url\+Dao, \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1service_1_1_converter}{Converter}} converter)
+\item 
+String \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_ad1a421060103910c6ed8ac443275f2a1}{shorten\+U\+RL}} (\mbox{\hyperlink{classlinktuit_1_1linktuit_1_1dto_1_1_url_d_t_o}{Url\+D\+TO}} dto\+Request)
+\item 
+String \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_aa9666536bbfecc39422685821aa664fb}{get\+Long\+U\+RL}} (String shorturl)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_a0c11c1fe30473877a95857fc96bbc621}\label{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_a0c11c1fe30473877a95857fc96bbc621}} 
+\index{linktuit.linktuit.service.UrlServiceImpl@{linktuit.linktuit.service.UrlServiceImpl}!UrlServiceImpl@{UrlServiceImpl}}
+\index{UrlServiceImpl@{UrlServiceImpl}!linktuit.linktuit.service.UrlServiceImpl@{linktuit.linktuit.service.UrlServiceImpl}}
+\doxysubsubsection{\texorpdfstring{UrlServiceImpl()}{UrlServiceImpl()}}
+{\footnotesize\ttfamily linktuit.\+linktuit.\+service.\+Url\+Service\+Impl.\+Url\+Service\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o}{Url\+D\+AO}}}]{url\+Dao,  }\item[{\mbox{\hyperlink{classlinktuit_1_1linktuit_1_1service_1_1_converter}{Converter}}}]{converter }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em url\+Dao} & \\
+\hline
+{\em converter} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_aa9666536bbfecc39422685821aa664fb}\label{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_aa9666536bbfecc39422685821aa664fb}} 
+\index{linktuit.linktuit.service.UrlServiceImpl@{linktuit.linktuit.service.UrlServiceImpl}!getLongURL@{getLongURL}}
+\index{getLongURL@{getLongURL}!linktuit.linktuit.service.UrlServiceImpl@{linktuit.linktuit.service.UrlServiceImpl}}
+\doxysubsubsection{\texorpdfstring{getLongURL()}{getLongURL()}}
+{\footnotesize\ttfamily String linktuit.\+linktuit.\+service.\+Url\+Service\+Impl.\+get\+Long\+U\+RL (\begin{DoxyParamCaption}\item[{String}]{shorturl }\end{DoxyParamCaption})}
+
+Converts the short U\+RL back to the base 10 ID which is used to lookup in the database the mapping to the original U\+RL. Deletes database entries if the number of requests alotted has reached 0. 
+
+Implements \mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1service_1_1_url_service_a08cedd0e364ca7e0f63d1163a790c0c8}{linktuit.\+linktuit.\+service.\+Url\+Service}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_ad1a421060103910c6ed8ac443275f2a1}\label{classlinktuit_1_1linktuit_1_1service_1_1_url_service_impl_ad1a421060103910c6ed8ac443275f2a1}} 
+\index{linktuit.linktuit.service.UrlServiceImpl@{linktuit.linktuit.service.UrlServiceImpl}!shortenURL@{shortenURL}}
+\index{shortenURL@{shortenURL}!linktuit.linktuit.service.UrlServiceImpl@{linktuit.linktuit.service.UrlServiceImpl}}
+\doxysubsubsection{\texorpdfstring{shortenURL()}{shortenURL()}}
+{\footnotesize\ttfamily String linktuit.\+linktuit.\+service.\+Url\+Service\+Impl.\+shorten\+U\+RL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlinktuit_1_1linktuit_1_1dto_1_1_url_d_t_o}{Url\+D\+TO}}}]{dto\+Request }\end{DoxyParamCaption})}
+
+Creates new U\+RL mapping that will be saved into the database then takes the unique id from the database and converts it to the short U\+RL 
+
+Implements \mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1service_1_1_url_service_a1ce0a701cf560acc565d99db805bf405}{linktuit.\+linktuit.\+service.\+Url\+Service}}.
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/linktuit/linktuit/service/\mbox{\hyperlink{_url_service_impl_8java}{Url\+Service\+Impl.\+java}}\end{DoxyCompactItemize}

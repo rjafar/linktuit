@@ -1,0 +1,41 @@
+\hypertarget{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller}{}\doxysection{linktuit.\+linktuit.\+controller.\+Url\+Controller Class Reference}
+\label{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller}\index{linktuit.linktuit.controller.UrlController@{linktuit.linktuit.controller.UrlController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller_a4675916c9ee3e39469405b8fe99bb470}{Url\+Controller}} (\mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1service_1_1_url_service}{Url\+Service}} url\+Service)
+\item 
+String \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller_a126bd7a13fc9f2c67b2f8b547de5ae56}{shorten\+Url}} (@Request\+Body \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1dto_1_1_url_d_t_o}{Url\+D\+TO}} longurl)
+\item 
+Response\+Entity$<$ Void $>$ \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller_a4ea8338cfd7c6dfe60ff99b0fd1b0c0f}{redirect}} (@Path\+Variable String short\+Url)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This controller class serves as the mediator between the user and the rest of the service. Contains the H\+T\+TP request methods. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller_a4675916c9ee3e39469405b8fe99bb470}\label{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller_a4675916c9ee3e39469405b8fe99bb470}} 
+\index{linktuit.linktuit.controller.UrlController@{linktuit.linktuit.controller.UrlController}!UrlController@{UrlController}}
+\index{UrlController@{UrlController}!linktuit.linktuit.controller.UrlController@{linktuit.linktuit.controller.UrlController}}
+\doxysubsubsection{\texorpdfstring{UrlController()}{UrlController()}}
+{\footnotesize\ttfamily linktuit.\+linktuit.\+controller.\+Url\+Controller.\+Url\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1service_1_1_url_service}{Url\+Service}}}]{url\+Service }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller_a4ea8338cfd7c6dfe60ff99b0fd1b0c0f}\label{classlinktuit_1_1linktuit_1_1controller_1_1_url_controller_a4ea8338cfd7c6dfe60ff99b0fd1b0c0f}} 
+\index{linktuit.linktuit.controller.UrlController@{linktuit.linktuit.controller.UrlController}!redirect@{redirect}}
+\index{redirect@{redirect}!linktuit.linktuit.controller.UrlController@{linktuit.linktuit.controller.UrlController}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily Response\+Entity$<$Void$>$ linktuit.\+linktuit.\+controller.\+Url\+Controller.\+redirect (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{short\+Url }\end{DoxyParamCaption})}
+
+Get request that gets the long U\+RL and redirects to it 
+\begin{DoxyParams}{Parameters}
+{\em short\+Url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response 
+\end{DoxyReturn}
+Here is the call graph for this function\+:

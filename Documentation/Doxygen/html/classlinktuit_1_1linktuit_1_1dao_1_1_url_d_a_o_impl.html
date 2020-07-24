@@ -24,6 +24,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="linktuitLogo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Linktuit
    </div>
@@ -91,13 +92,12 @@ $(document).ready(function(){initNavTree('classlinktuit_1_1linktuit_1_1dao_1_1_u
 <div class="dynheader">
 Inheritance diagram for linktuit.linktuit.dao.UrlDAOImpl:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl__inherit__graph.png" border="0" usemap="#linktuit_8linktuit_8dao_8_url_d_a_o_impl_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for linktuit.linktuit.dao.UrlDAOImpl:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl__coll__graph.png" border="0" usemap="#linktuit_8linktuit_8dao_8_url_d_a_o_impl_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl.png" usemap="#linktuit.linktuit.dao.UrlDAOImpl_map" alt=""/>
+  <map id="linktuit.linktuit.dao.UrlDAOImpl_map" name="linktuit.linktuit.dao.UrlDAOImpl_map">
+<area href="interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o.html" alt="linktuit.linktuit.dao.UrlDAO" shape="rect" coords="0,0,181,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -107,12 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad02a762e83e50d9091acfecc4cbee26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c6c8ccf0a799cd83733996779d2284"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl.html#a15c6c8ccf0a799cd83733996779d2284">findMapping</a> (long id)</td></tr>
 <tr class="separator:a15c6c8ccf0a799cd83733996779d2284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67bb460fa31eca3ff89b61fea0535ab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl.html#a67bb460fa31eca3ff89b61fea0535ab2">deleteMapping</a> (long id)</td></tr>
-<tr class="separator:a67bb460fa31eca3ff89b61fea0535ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c97f092e3fbdf75e2bfd8cd29af46a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl.html#a5c97f092e3fbdf75e2bfd8cd29af46a9">deleteMapping</a> (long id, DBCollection col)</td></tr>
+<tr class="separator:a5c97f092e3fbdf75e2bfd8cd29af46a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a67bb460fa31eca3ff89b61fea0535ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67bb460fa31eca3ff89b61fea0535ab2">&#9670;&nbsp;</a></span>deleteMapping()</h2>
+<a id="a5c97f092e3fbdf75e2bfd8cd29af46a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c97f092e3fbdf75e2bfd8cd29af46a9">&#9670;&nbsp;</a></span>deleteMapping()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,18 +121,30 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void linktuit.linktuit.dao.UrlDAOImpl.deleteMapping </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">DBCollection&#160;</td>
+          <td class="paramname"><em>col</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method deletes an entry from the db. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">long</td><td>id of the entry to be deleted </td></tr>
+    <tr><td class="paramname">DBCollection</td><td>the collection to delete from </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o.html#a8a18cd5fc9565b3b2520bf90208aaa74">linktuit.linktuit.dao.UrlDAO</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a67bb460fa31eca3ff89b61fea0535ab2_icgraph.png" border="0" usemap="#classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a67bb460fa31eca3ff89b61fea0535ab2_icgraph" alt=""/></div>
-</div>
+<p>Implements <a class="el" href="interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o.html#a920582618d9af5eae463616a1e05d9c3">linktuit.linktuit.dao.UrlDAO</a>.</p>
 
 </div>
 </div>
@@ -151,13 +163,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method searches the database for the entry at the index provided provided by the parameter, id. It retrieves the original URL. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">long</td><td>id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String original URL </dd></dl>
 
 <p>Implements <a class="el" href="interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o.html#afc796202b5be7e3b65c367133696dbe7">linktuit.linktuit.dao.UrlDAO</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a15c6c8ccf0a799cd83733996779d2284_cgraph.png" border="0" usemap="#classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a15c6c8ccf0a799cd83733996779d2284_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -196,11 +210,6 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>long id </dd></dl>
 
 <p>Implements <a class="el" href="interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o.html#a707418e80180b50f33f52671755f4189">linktuit.linktuit.dao.UrlDAO</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_ad02a762e83e50d9091acfecc4cbee26a_icgraph.png" border="0" usemap="#classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_ad02a762e83e50d9091acfecc4cbee26a_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -228,11 +237,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>long id of newly saved database entry </dd></dl>
 
 <p>Implements <a class="el" href="interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o.html#aac622d2d0aa220cb5db251a748ce179f">linktuit.linktuit.dao.UrlDAO</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_adf29c0dacfd99da57117fae9806cb14c_cgraph.png" border="0" usemap="#classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_adf29c0dacfd99da57117fae9806cb14c_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>

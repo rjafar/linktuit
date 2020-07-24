@@ -29,7 +29,7 @@ public class UrlDAOImpl implements UrlDAO {
             DB database = client.getDB("linktuit_db");
             DBCollection urlMappings = database.getCollection("url_mappings");
             
-            // create a database entry including [_id, original_URL, num_requests_left]
+            // create a database entry including [_id, originalURL, numReqsLeft]
             BasicDBObject dbEntry = new BasicDBObject();
             long id = getNextId("urlid", urlMappings);
             dbEntry.put("_id", id);
@@ -54,34 +54,53 @@ public class UrlDAOImpl implements UrlDAO {
      * @return long id
      */
     public long getNextId(String name, DBCollection col) {
+        // search database by the specific id associated with the id sequence
         BasicDBObject query = new BasicDBObject();
         query.put("_id", name);
+
+        // increment the sequence each time a new entry is added
         BasicDBObject update = new BasicDBObject();
         update.put("$inc", new BasicDBObject("seq", 1));
         DBObject obj = col.findAndModify(query, update);
+
+        // return the updated sequence number to serve as the id for an entry
         return (long)obj.get("seq");
     }
 
+    /**
+     * This method searches the database for the entry at the index provided
+     * provided by the parameter, id. It retrieves the original URL.
+     * @param long id
+     * @return String original URL
+     */
     public String findMapping(long id) {
-        // set up mongo client and get the specific database and collection
         try {
+            // set up mongo client and get the specific database and collection
             MongoClient client = new MongoClient("localhost", 27017);
             DB database = client.getDB("linktuit_db");
             DBCollection urlMappings = database.getCollection("url_mappings");
+            
+            // search database by id and decrement the number of requests
             BasicDBObject query = new BasicDBObject();
             query.put("_id", id);
             BasicDBObject update = new BasicDBObject();
-            update.put("$inc", new BasicDBObject("numRequestsLeft", -1));
+            update.put("$inc", new BasicDBObject("numReqsLeft", -1));
             DBObject entry = urlMappings.findAndModify(query, update);
             
             if (entry != null) {
+                // get the original URL from the db entry
                 String originalUrl = entry.get("originalURL").toString();
-                if (entry.get("numRequestsLeft") != null && (int)entry.get("numRequestsLeft") <= 0){
-                    deleteMapping(entry, urlMappings);
+
+                // delete entry from db if there are no more requests left
+                if (entry.get("numReqsLeft") != null && (int)entry.get("numReqsLeft") <= 0){
+                    deleteMapping(id, urlMappings);
                     System.out.println("Link to " + originalUrl + " has expired!");
+                    return "ERR: Link expired";
                 }
-                return originalUrl;
-            }
+                else {
+                   return originalUrl; 
+                }  
+            } 
                
         } catch (Exception ex) {
             System.out.println(ex);
@@ -89,7 +108,15 @@ public class UrlDAOImpl implements UrlDAO {
         return "ERR";
     }
 
-    public void deleteMapping(DBObject entry, DBCollection col) {
-        col.remove(entry);
+    /**
+     * This method deletes an entry from the db.
+     * @param long id of the entry to be deleted
+     * @param DBCollection the collection to delete from
+     */
+    public void deleteMapping(long id, DBCollection col) {
+        BasicDBObject query = new BasicDBObject();
+        query.put("_id", id);
+        col.remove(query);
+        System.out.println("Entry deleted!");
     }
 }

@@ -50,7 +50,7 @@ public class Converter {
         for (int i = 0; i < length; i++) {
             char c = inputStringArr[i];
             int idx = base62chars.indexOf(c);
-            id = id + idx * 62^(length - count);
+            id += idx * (long)Math.pow(base, length - count);
             count++;
         }
         return id;

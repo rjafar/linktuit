@@ -21,6 +21,6 @@ public interface UrlDAO {
 
     String findMapping(long id);
 
-    void deleteMapping(DBObject entry, DBCollection col);
+    void deleteMapping(long id, DBCollection col);
 }
 

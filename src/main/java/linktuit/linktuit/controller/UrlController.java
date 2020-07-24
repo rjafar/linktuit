@@ -36,7 +36,7 @@ public class UrlController {
      * @param longurl
      * @return String short URL
      */
-    @PostMapping("create-short-url")
+    @PostMapping("/shortenUrl")
     public String shortenUrl(@RequestBody UrlDTO longurl) {
         return urlService.shortenURL(longurl);
     }

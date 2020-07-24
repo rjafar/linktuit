@@ -1,13 +1,11 @@
 \hypertarget{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl}{}\doxysection{linktuit.\+linktuit.\+dao.\+Url\+D\+A\+O\+Impl Class Reference}
 \label{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl}\index{linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}}
-
-
-Inheritance diagram for linktuit.\+linktuit.\+dao.\+Url\+D\+A\+O\+Impl\+:
-% FIG 0
-
-
-Collaboration diagram for linktuit.\+linktuit.\+dao.\+Url\+D\+A\+O\+Impl\+:
-% FIG 1
+Inheritance diagram for linktuit.\+linktuit.\+dao.\+Url\+D\+A\+O\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,35 +15,46 @@ long \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_ad02a7
 \item 
 String \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a15c6c8ccf0a799cd83733996779d2284}{find\+Mapping}} (long id)
 \item 
-void \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a67bb460fa31eca3ff89b61fea0535ab2}{delete\+Mapping}} (long id)
+void \mbox{\hyperlink{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a5c97f092e3fbdf75e2bfd8cd29af46a9}{delete\+Mapping}} (long id, D\+B\+Collection col)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a67bb460fa31eca3ff89b61fea0535ab2}\label{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a67bb460fa31eca3ff89b61fea0535ab2}} 
+\mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a5c97f092e3fbdf75e2bfd8cd29af46a9}\label{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a5c97f092e3fbdf75e2bfd8cd29af46a9}} 
 \index{linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}!deleteMapping@{deleteMapping}}
 \index{deleteMapping@{deleteMapping}!linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}}
 \doxysubsubsection{\texorpdfstring{deleteMapping()}{deleteMapping()}}
-{\footnotesize\ttfamily void linktuit.\+linktuit.\+dao.\+Url\+D\+A\+O\+Impl.\+delete\+Mapping (\begin{DoxyParamCaption}\item[{long}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void linktuit.\+linktuit.\+dao.\+Url\+D\+A\+O\+Impl.\+delete\+Mapping (\begin{DoxyParamCaption}\item[{long}]{id,  }\item[{D\+B\+Collection}]{col }\end{DoxyParamCaption})}
+
+This method deletes an entry from the db. 
+\begin{DoxyParams}{Parameters}
+{\em long} & id of the entry to be deleted \\
+\hline
+{\em D\+B\+Collection} & the collection to delete from \\
+\hline
+\end{DoxyParams}
 
 
+Implements \mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_a920582618d9af5eae463616a1e05d9c3}{linktuit.\+linktuit.\+dao.\+Url\+D\+AO}}.
 
-Implements \mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_a8a18cd5fc9565b3b2520bf90208aaa74}{linktuit.\+linktuit.\+dao.\+Url\+D\+AO}}.
-
-Here is the caller graph for this function\+:
-% FIG 2
 \mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a15c6c8ccf0a799cd83733996779d2284}\label{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_a15c6c8ccf0a799cd83733996779d2284}} 
 \index{linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}!findMapping@{findMapping}}
 \index{findMapping@{findMapping}!linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}}
 \doxysubsubsection{\texorpdfstring{findMapping()}{findMapping()}}
 {\footnotesize\ttfamily String linktuit.\+linktuit.\+dao.\+Url\+D\+A\+O\+Impl.\+find\+Mapping (\begin{DoxyParamCaption}\item[{long}]{id }\end{DoxyParamCaption})}
 
+This method searches the database for the entry at the index provided provided by the parameter, id. It retrieves the original U\+RL. 
+\begin{DoxyParams}{Parameters}
+{\em long} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String original U\+RL 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_afc796202b5be7e3b65c367133696dbe7}{linktuit.\+linktuit.\+dao.\+Url\+D\+AO}}.
 
-Here is the call graph for this function\+:
-% FIG 3
 \mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_ad02a762e83e50d9091acfecc4cbee26a}\label{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_ad02a762e83e50d9091acfecc4cbee26a}} 
 \index{linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}!getNextId@{getNextId}}
 \index{getNextId@{getNextId}!linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}}
@@ -66,8 +75,6 @@ long id
 
 Implements \mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_a707418e80180b50f33f52671755f4189}{linktuit.\+linktuit.\+dao.\+Url\+D\+AO}}.
 
-Here is the caller graph for this function\+:
-% FIG 4
 \mbox{\Hypertarget{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_adf29c0dacfd99da57117fae9806cb14c}\label{classlinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_impl_adf29c0dacfd99da57117fae9806cb14c}} 
 \index{linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}!save@{save}}
 \index{save@{save}!linktuit.linktuit.dao.UrlDAOImpl@{linktuit.linktuit.dao.UrlDAOImpl}}
@@ -86,8 +93,6 @@ long id of newly saved database entry
 
 Implements \mbox{\hyperlink{interfacelinktuit_1_1linktuit_1_1dao_1_1_url_d_a_o_aac622d2d0aa220cb5db251a748ce179f}{linktuit.\+linktuit.\+dao.\+Url\+D\+AO}}.
 
-Here is the call graph for this function\+:
-% FIG 5
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/linktuit/static/css/main.5f361e03.chunk.css",
+    "main.js": "/linktuit/static/js/main.2dfcf08b.chunk.js",
+    "main.js.map": "/linktuit/static/js/main.2dfcf08b.chunk.js.map",
+    "runtime-main.js": "/linktuit/static/js/runtime-main.e8a08b31.js",
+    "runtime-main.js.map": "/linktuit/static/js/runtime-main.e8a08b31.js.map",
+    "static/js/2.c24a221a.chunk.js": "/linktuit/static/js/2.c24a221a.chunk.js",
+    "static/js/2.c24a221a.chunk.js.map": "/linktuit/static/js/2.c24a221a.chunk.js.map",
+    "index.html": "/linktuit/index.html",
+    "precache-manifest.8a1cbc4f18df301c8454a74568d4274d.js": "/linktuit/precache-manifest.8a1cbc4f18df301c8454a74568d4274d.js",
+    "service-worker.js": "/linktuit/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/linktuit/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c24a221a.chunk.js.LICENSE.txt": "/linktuit/static/js/2.c24a221a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/linktuit/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e8a08b31.js",
+    "static/js/2.c24a221a.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.2dfcf08b.chunk.js"
+  ]
+}

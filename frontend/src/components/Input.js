@@ -26,7 +26,7 @@ function Input() {
     // sends original URL to backend in HTTP POST request
     // displays the response to user (shortened URL)
     async function sendURL(input) {
-      fetch("/api/v1/shortenUrl", {
+      fetch("/shortenUrl", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,7 +41,6 @@ function Input() {
       })
       .then(url => {
         setShortURL(url);
-        setMsg("OK");
       })
       .catch(err => {
         setMsg("ERR");
@@ -56,6 +55,7 @@ function Input() {
       if (originalUrl !== "") {
         const input = { originalUrl, createdDate, numRequestsLeft };
         sendURL(input)
+        setMsg("OK");
         setDisplayUrl(true);
       }
       else {

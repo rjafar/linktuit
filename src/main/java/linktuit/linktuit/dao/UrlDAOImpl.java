@@ -41,7 +41,7 @@ public class UrlDAOImpl implements UrlDAO {
 
             // insert entry into db collection
             urlMappings.insert(dbEntry);
-
+            
             // return the id associated with the newly created db entry
             return id;
         } catch (Exception ex) {

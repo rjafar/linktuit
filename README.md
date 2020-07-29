@@ -8,7 +8,7 @@ URL Shortener Web Service
 
 <b>Running</b>
 
-`java -jar target/linktuit-0.0.1-SNAPSHOT.jar linktuit.linktuit.LinktuitApplication`
+`./mvnw spring-boot:run`
 
 <b>Testing</b>
   

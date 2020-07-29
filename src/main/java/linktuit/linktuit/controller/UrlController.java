@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 
 // Java packages
 import java.net.URI;
+import java.util.*;
 
 // Internal classes
 import linktuit.linktuit.dto.UrlDTO;
@@ -34,11 +35,12 @@ public class UrlController {
     /**
      * Post method that creates the new shortened URL
      * @param longurl
-     * @return String short URL
+     * @return Map<String,String> JSON-format
      */
     @PostMapping("/shortenUrl")
-    public String shortenUrl(@RequestBody UrlDTO longurl) {
-        return urlService.shortenURL(longurl);
+    public Map<String,String> shortenUrl(@RequestBody UrlDTO longurl) {
+        String url = urlService.shortenURL(longurl);
+        return Collections.singletonMap("url", url);
     }
 
     /**

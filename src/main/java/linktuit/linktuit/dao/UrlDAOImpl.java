@@ -3,6 +3,8 @@ package linktuit.linktuit.dao;
 // Spring packages
 import org.springframework.stereotype.Repository;
 
+import java.lang.Number;
+
 import linktuit.linktuit.modal.UrlMapping;
 
 // MongoDB packages
@@ -12,6 +14,9 @@ import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import com.mongodb.DBObject;
 
+/**
+ * This class serves as a data access object to interact with the database
+ */
 @Repository
 public class UrlDAOImpl implements UrlDAO {
 
@@ -32,6 +37,7 @@ public class UrlDAOImpl implements UrlDAO {
             // create a database entry including [_id, originalURL, numReqsLeft]
             BasicDBObject dbEntry = new BasicDBObject();
             long id = getNextId("urlid", urlMappings);
+    
             dbEntry.put("_id", id);
             dbEntry.put("originalURL", urlMapping.getOriginalURL());
             dbEntry.put("numReqsLeft", urlMapping.getNumRequestsLeft());
@@ -64,7 +70,7 @@ public class UrlDAOImpl implements UrlDAO {
         DBObject obj = col.findAndModify(query, update);
 
         // return the updated sequence number to serve as the id for an entry
-        return (long)obj.get("seq");
+        return ((Number)obj.get("seq")).longValue();
     }
 
     /**

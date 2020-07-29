@@ -12,6 +12,9 @@ import linktuit.linktuit.dao.UrlDAO;
 import linktuit.linktuit.dto.UrlDTO;
 import linktuit.linktuit.service.Converter;
 
+/**
+ * This class performs the actual service of shortening the URL and basic calculations
+ */
 @Service
 public class UrlServiceImpl implements UrlService {
 
@@ -38,10 +41,14 @@ public class UrlServiceImpl implements UrlService {
         UrlMapping mapping = new UrlMapping();
         mapping.setOriginalURL(dtoRequest.getOriginalUrl());
         mapping.setNumRequestsLeft(dtoRequest.getNumReqsLeft());
-        mapping.setCreatedDate(new Date());
+        mapping.setCreatedDate(dtoRequest.getCreatedDate());
 
         // save mapping as entry in database and grab the unique ID
         long id = urlDao.save(mapping);
+
+        if (id == -1) {
+            return "ERR: Could not save to db";
+        }
 
         // encode the id in order to use as the short URL
         String shortUrl = converter.base10ToBase62(id);
@@ -64,7 +71,7 @@ public class UrlServiceImpl implements UrlService {
             String originalURL = urlDao.findMapping(id);
             return originalURL;
         } catch (Exception ex) {
-            System.out.println("" + ex + "- No mapping exists for linktuit.com/" + shorturl);
+            System.out.println("" + ex + "- No mapping exists for " + shorturl);
             return "ERR";
         }
     }

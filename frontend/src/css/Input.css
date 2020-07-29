@@ -1,0 +1,80 @@
+.form {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas {
+    color: #3771c8;
+}
+
+.input {
+    height: 400px;
+}
+
+.form-control {
+    height: 50px;
+    width: 500px;
+}
+
+button {
+    height: 56px;
+}
+
+.status {
+    height: 80px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    /* display: none; */
+}
+
+.fa-smile {
+    font-weight: normal;
+}
+
+.fa-frown {
+    font-weight: normal;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-2x {
+    padding: 2px;
+    color: #717684;
+}
+
+.copyUrl {
+    background-color: #dce6ff;
+    border: none;
+    color: #3771c8; 
+    font-weight: bold;
+    font-size: large;
+    margin: auto;
+}
+
+.copyUrl:focus {
+    outline: none;
+}
+
+.url {
+    height: 110px;
+}
+
+#clickId {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+#copiedId {
+    margin-top: 0px;
+}

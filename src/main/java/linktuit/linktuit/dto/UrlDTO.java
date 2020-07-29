@@ -11,12 +11,18 @@ public class UrlDTO {
     private Date createdDate;
     private int numRequestsLeft;
 
+    public UrlDTO(String originalUrl, Date createdDate, int numRequestsLeft) {
+        this.originalUrl = originalUrl;
+        this.createdDate = createdDate;
+        this.numRequestsLeft = numRequestsLeft;
+    }
+
     /**
      * Return the original long URL
      * @return String original URL
      */
     public String getOriginalUrl() {
-        return originalUrl;
+        return this.originalUrl;
     }
 
     /**
@@ -32,7 +38,7 @@ public class UrlDTO {
      * @return Date that this data request was created
      */
     public Date getCreatedDate() {
-        return createdDate;
+        return this.createdDate;
     }
 
     /**

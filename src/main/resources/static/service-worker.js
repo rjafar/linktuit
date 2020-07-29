@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/linktuit/precache-manifest.8a1cbc4f18df301c8454a74568d4274d.js"
+  "/linktuit/precache-manifest.64e410a067ff1c95c2ed0ea9acde5ee1.js"
 );
 
 self.addEventListener('message', (event) => {

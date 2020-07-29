@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/linktuit/static/css/main.5f361e03.chunk.css",
-    "main.js": "/linktuit/static/js/main.2dfcf08b.chunk.js",
-    "main.js.map": "/linktuit/static/js/main.2dfcf08b.chunk.js.map",
+    "main.css": "/linktuit/static/css/main.8bf3c90a.chunk.css",
+    "main.js": "/linktuit/static/js/main.145a167b.chunk.js",
+    "main.js.map": "/linktuit/static/js/main.145a167b.chunk.js.map",
     "runtime-main.js": "/linktuit/static/js/runtime-main.e8a08b31.js",
     "runtime-main.js.map": "/linktuit/static/js/runtime-main.e8a08b31.js.map",
     "static/js/2.c24a221a.chunk.js": "/linktuit/static/js/2.c24a221a.chunk.js",
     "static/js/2.c24a221a.chunk.js.map": "/linktuit/static/js/2.c24a221a.chunk.js.map",
     "index.html": "/linktuit/index.html",
-    "precache-manifest.8a1cbc4f18df301c8454a74568d4274d.js": "/linktuit/precache-manifest.8a1cbc4f18df301c8454a74568d4274d.js",
+    "precache-manifest.64e410a067ff1c95c2ed0ea9acde5ee1.js": "/linktuit/precache-manifest.64e410a067ff1c95c2ed0ea9acde5ee1.js",
     "service-worker.js": "/linktuit/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/linktuit/static/css/main.5f361e03.chunk.css.map",
+    "static/css/main.8bf3c90a.chunk.css.map": "/linktuit/static/css/main.8bf3c90a.chunk.css.map",
     "static/js/2.c24a221a.chunk.js.LICENSE.txt": "/linktuit/static/js/2.c24a221a.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/linktuit/static/media/logo.5d5d9eef.svg"
+    "static/media/linktuitLogo.svg": "/linktuit/static/media/linktuitLogo.cd7cde02.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e8a08b31.js",
     "static/js/2.c24a221a.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.2dfcf08b.chunk.js"
+    "static/css/main.8bf3c90a.chunk.css",
+    "static/js/main.145a167b.chunk.js"
   ]
 }

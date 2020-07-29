@@ -46,7 +46,7 @@ public class UrlServiceTest {
         when(mockDao.save(any(UrlMapping.class))).thenReturn((long)5);
         when(mockConverter.base10ToBase62(url.getId())).thenReturn("f");
 
-        UrlDTO urlRequest = new UrlDTO();
+        UrlDTO urlRequest = new UrlDTO(url.getOriginalURL(), url.getCreatedDate(), url.getNumRequestsLeft());
         urlRequest.setOriginalUrl("https://revanjafar.com");
 
         assertEquals("f", urlService.shortenURL(urlRequest));

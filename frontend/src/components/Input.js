@@ -26,7 +26,7 @@ function Input() {
     // sends original URL to backend in HTTP POST request
     // displays the response to user (shortened URL)
     async function sendURL(input) {
-      fetch("/shortenUrl", {
+      fetch("/api/v1/shortenUrl", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

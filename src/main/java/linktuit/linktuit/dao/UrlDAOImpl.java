@@ -14,6 +14,9 @@ import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import com.mongodb.DBObject;
 
+/**
+ * This class serves as a data access object to interact with the database
+ */
 @Repository
 public class UrlDAOImpl implements UrlDAO {
 
@@ -41,7 +44,7 @@ public class UrlDAOImpl implements UrlDAO {
 
             // insert entry into db collection
             urlMappings.insert(dbEntry);
-            
+
             // return the id associated with the newly created db entry
             return id;
         } catch (Exception ex) {

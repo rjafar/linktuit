@@ -35,7 +35,7 @@ public class UrlController {
     /**
      * Post method that creates the new shortened URL
      * @param longurl
-     * @return String short URL
+     * @return Map<String,String> JSON-format
      */
     @PostMapping("/shortenUrl")
     public Map<String,String> shortenUrl(@RequestBody UrlDTO longurl) {
